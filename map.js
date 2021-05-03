@@ -1,28 +1,28 @@
 
-const  assertArraysEqual = function(arr1, arr2) {
-  if (arr1.length !== arr2.length)
-    return console.log(`💣 💣 Array Length is not the same: ${arr1}!== ${arr2}`);
+// const  assertArraysEqual = function(arr1, arr2) {
+//   if (arr1.length !== arr2.length)
+//     return console.log(`💣 💣 Array Length is not the same: ${arr1}!== ${arr2}`);
    
-  for (let i = 0; i < arr1.length; i++)
-    if (arr1[i] !== arr2[i])
+//   for (let i = 0; i < arr1.length; i++)
+//     if (arr1[i] !== arr2[i])
     
-      return console.log(`💣 💣 Array Order is not the same: ${arr1}!== ${arr2}`);
+//       return console.log(`💣 💣 Array Order is not the same: ${arr1}!== ${arr2}`);
   
-  return console.log(`🌈 🏆 Looks the Same!: ${arr1} === ${arr2}`);
+//   return console.log(`🌈 🏆 Looks the Same!: ${arr1} === ${arr2}`);
   
-};
+// };
 
-const eqArrays = function(arr1, arr2) {
-  if (arr1.length !== arr2.length) {
-    return false;
-  }
-  for (let i = 0; i < arr1.length; i++) {
-    if (arr1[i] !== arr2[i]) {
-      return false;
-    }
-  }
-  return true;
-};
+// const eqArrays = function(arr1, arr2) {
+//   if (arr1.length !== arr2.length) {
+//     return false;
+//   }
+//   for (let i = 0; i < arr1.length; i++) {
+//     if (arr1[i] !== arr2[i]) {
+//       return false;
+//     }
+//   }
+//   return true;
+// };
 
 
 const words = ["ground", "control", "to", "major", "tom"];
@@ -40,7 +40,12 @@ const results1 = map(words, word => word[0]);
 console.log(results1);
 
 
-assertEqual(4, 13);
-assertArraysEqual([1, 2, 3], [1, 2, 3]);
 
-assertEqual(map(words, word => word[0]));
+const foo = function() {
+  var x = 1;
+  if (x === 1) {
+    let y = 2;
+  }
+  console.log('Value of y is ' + y);
+}
+foo();
