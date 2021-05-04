@@ -1,9 +1,9 @@
 
-const tail = function(words) {
+const tail = function(array) {
   let tailArray = [];
-  tailArray = words.slice(1);
+  tailArray = array.slice(- 1);
   return tailArray;
 };
 
 
-module.exports = tail;
+module.exports = tail
