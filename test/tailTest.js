@@ -8,9 +8,6 @@ describe('tail', () => {
   it('Returns [3] when given [1, 2, 3]', () => {
     assert.deepEqual(tail([1, 2, 3]), [3])
   })
-  it('Returns [4] when given [1, 2, 3, 4]', () => {
-    assert.deepEqual(tail([1, 2, 3, 4]), [4])
-  })
 
 })
 

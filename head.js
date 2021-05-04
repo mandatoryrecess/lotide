@@ -6,6 +6,4 @@ const head = function(array) {
 
 console.log(head([5,6,7]));
 
-// console.log(head([1, 2, 3]))
-
 module.exports = head
