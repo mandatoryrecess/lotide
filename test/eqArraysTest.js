@@ -1,4 +1,8 @@
-const eqArrays = require('../eqArrays');
+const assert = require("chai").assert;
+const eqArrays = require("../eqArrays");
 
-
-console.log((eqArrays([1, 2, 3], [1, 2, 3]), true)); // => should PASS
+describe("eqArrays", () => {
+  it("both arrays should be equal and return true", () => {
+    assert.deepEqual(eqArrays([1, 2, 3], [1, 2, 3]), true);
+  });
+});
